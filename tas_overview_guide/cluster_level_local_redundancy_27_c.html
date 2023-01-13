@@ -1,0 +1,172 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-whc_version="25.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="description" content="The HPE TAS software may be deployed in two forms/configurations based on the clustering of the HPE TAS platform nodes: N+1 or N+M simplex pseudo-cluster, which offers virtually unlimited horizontal ..."/><meta name="DC.rights.owner" content="(C) Copyright 2023"/><meta name="copyright" content="(C) Copyright 2023"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="concept"/><meta name="DC.relation" content="../tas_overview_guide/reliability_128_c.html"/><meta name="prodname" content=""/><meta name="version" content="3"/><meta name="release" content="5"/><meta name="brand" content="manwomantablet"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="A7724194-5D2F24A-7127B1C986D5290-CFE15E"/><title>Cluster-level local redundancy</title><!--  Generated with Oxygen version 25.0, build number 2022100714.  --><meta name="wh-path2root" content="../"/><meta name="wh-toc-id" content="A7724194-5D2F24A-7127B1C986D5290-CFE15E-d1096e1610"/><meta name="wh-source-relpath" content="tas_overview_guide/cluster_level_local_redundancy_27_c.dita"/><meta name="wh-out-relpath" content="tas_overview_guide/cluster_level_local_redundancy_27_c.html"/>
+
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/commons.css?buildId=2022100714"/>
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic.css?buildId=2022100714"/>
+
+    <script>
+        var oxy_webhelp_navlinks = {};
+    </script>
+    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20230113132258"></script>
+    <script src="../oxygen-webhelp/app/localization/strings.js?buildId=2022100714"></script>
+    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20230113132258"></script>
+    <script defer="defer" src="../oxygen-webhelp/app/commons.js?buildId=2022100714"></script>
+    <script defer="defer" src="../oxygen-webhelp/app/topic.js?buildId=2022100714"></script>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2022100714"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/notes.css?buildId=2022100714"/><link rel="stylesheet" type="text/css" href="../hpe_webhelp_skin_ihss.css"/></head>
+
+    <body id="A7724194-5D2F24A-7127B1C986D5290-CFE15E" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <a href="../index.html" class=" wh_logo d-none d-sm-block "><img src="../hpesm_pri_grn_rev_rgb.svg" alt="Hewlett Packard Enterprise"/></a>
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="booktitle">  <span class="ph mainbooktitle">HPE Telecom Application Server</span>  <span class="ph booktitlealt">Overview Guide</span>  </span></a></div>
+                    
+                </div>
+                
+                
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        
+         
+        
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form>
+            
+            
+            
+        </div>
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li><li><div class="topicref" data-id="A445AA41-4521F21-54A7F17517B2114-826ED2"><div class="title"><a href="../tas_overview_guide/hpe_tas_features_and_salient_points_17_c.html">HPE TAS features and salient points</a></div></div></li><li><div class="topicref" data-id="A747F6A4-19453D5-D5F214877157B2B-0593B2"><div class="title"><a href="../tas_overview_guide/reliability_128_c.html">Reliability</a></div></div></li><li class="active"><div class="topicref" data-id="A7724194-5D2F24A-7127B1C986D5290-CFE15E"><div class="title"><a href="../tas_overview_guide/cluster_level_local_redundancy_27_c.html">Cluster-level local redundancy</a></div></div></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        
+                        
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div class="col-12" id="wh_topic_body">
+                        
+                        
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article class="- topic/topic concept/concept topic concept" role="article" aria-labelledby="ariaid-title1">
+  <h1 class="- topic/title title topictitle1" id="ariaid-title1">Cluster-level local redundancy</h1>
+  <div class="- topic/body concept/conbody body conbody">
+      <p class="- topic/p p">The HPE TAS software may be deployed in two forms/configurations based on the clustering of
+         the HPE TAS platform nodes:</p>
+      <ul class="- topic/ul ul" id="A7724194-5D2F24A-7127B1C986D5290-CFE15E__ul_fw1_zll_ymb" data-ofbid="A7724194-5D2F24A-7127B1C986D5290-CFE15E__ul_fw1_zll_ymb">
+         <li class="- topic/li li">N+1 or N+M simplex pseudo-cluster, which offers virtually unlimited horizontal
+            scalability, without needing quorum devices, with a significantly faster and simpler
+            software upgrade and node addition/removal but also this solution needs node-by-node
+            management.</li>
+         <li class="- topic/li li">N+1 or N+M true-cluster, which offers significant horizontal scalability but within
+            certain engineering limits. It needs quorum function and offers centralized node
+            management, with a somewhat more involved software.</li>
+      </ul>
+      <p class="- topic/p p">N+1 or N+M refers to “N” quantity of platform nodes that are just enough to handle the
+         expected traffic at the highest peak, with respect to the operator-specified/mandated usage
+         and resource-reservation requirements. The “+1” or “+M” refers to one or more additional
+         nodes, that are able to provide redundancy when one (or more) servers out of the “N”
+         servers suffer outage. This ensures high availability of services running on the HPE TAS
+         platform.</p>
+      <p class="- topic/p p">For SIP, a frontend load balancer (SNF) may be deployed to distribute traffic towards HPE
+         TAS nodes. Whenever SNF is used as a frontend load balancer, it must be deployed as
+         high-availability pair. In an IMS network, it is also possible to deploy HPE TAS SIP nodes
+         without a frontend load balancer. This mode utilizes SIP DNS procedures (RFC3263) to
+         distribute traffic on the downstream legs, and requires the upstream elements to also use
+         the same DNS procedures to distribute traffic towards TAS nodes. </p>
+      <div class="- topic/note note note note_note"><span class="note__title">Note:</span> Please see <em class="+ topic/ph hi-d/i ph i">SIP Server Locator</em> section in <em class="+ topic/ph hi-d/i ph i">HPE TAS External Functional
+            Specification</em> document.</div>
+      <div class="- topic/p p">The M3UA frontend and load balancer (USPM) of HPE TAS are always deployed in high
+         availability pairs. For most deployments one pair is usually sufficient, however when more
+         required, additional pairs are can be used.<div class="- topic/note note note note_note"><span class="note__title">Note:</span> Unlike SIP and M3UA/SIGTRAN traffic, HPE
+            TAS has no dependency on a frontend and load balancer for DIAMETER traffic due to the
+            inherent nature of the protocol, how clients address route traffic to servers, and the
+            redundancy/reliability provisions built into the protocol. However, based on the
+            dimensions of the DIAMETER traffic, or the need to simplify the network topology, it may
+            be desirable to have a Diameter Routing Agent playing such a role. If required, HPE is
+            able to propose an HPE eIUM based Diameter Routing Agent (HPE eIUM DRA). HPE eIUM DRA is
+            a standalone product requiring its own dimensioning, deployment, software delivery, and
+            licensing, however HPE TAS is integrated with HPE eIUM DRA, making a project-specific
+            integration a quick, simple and risk-free exercise.</div></div>
+   </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    <p>Copyright 2015-2022 Hewlett Packard Enterprise Development LP.</p>
+  </div>
+</footer>
+        
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <div id="modal_img_container"></div>
+            <div id="caption"></div>
+        </div>
+        
+        
+        
+    </body>
+</html>

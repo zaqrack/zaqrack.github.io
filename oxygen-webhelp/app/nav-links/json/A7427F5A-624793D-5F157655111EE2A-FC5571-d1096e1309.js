@@ -1,0 +1,1 @@
+oxy_webhelp_navlinks = {"A7427F5A-624793D-5F157655111EE2A-FC5571-d1096e1309":{"topics":[{"title":"SOAP connector","href":"tas_overview_guide\/soap_connector_148_c.html","attributes":{"data-id":"A27A62A7-194535D-525A8616B51712B-54E4EC"},"menu":{"hasChildren":false},"tocID":"A27A62A7-194535D-525A8616B51712B-54E4EC-d1096e1329","topics":[]}]}};
