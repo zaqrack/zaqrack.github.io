@@ -7,9 +7,9 @@
     <script>
         var oxy_webhelp_navlinks = {};
     </script>
-    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20230113132852"></script>
+    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20230120152645"></script>
     <script src="../oxygen-webhelp/app/localization/strings.js?buildId=2022100714"></script>
-    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20230113132852"></script>
+    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20230120152645"></script>
     <script defer="defer" src="../oxygen-webhelp/app/commons.js?buildId=2022100714"></script>
     <script defer="defer" src="../oxygen-webhelp/app/topic.js?buildId=2022100714"></script>
 <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2022100714"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/notes.css?buildId=2022100714"/><link rel="stylesheet" type="text/css" href="../hpe_webhelp_skin_ihss.css"/></head>
@@ -77,7 +77,9 @@
                         
                         <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
                         
-                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                     </div>
                     
                 </nav>
@@ -89,9 +91,21 @@
             <div class="wh_content_area">
                 <div class="row">
                     
+                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem" aria-expanded="true"><div data-tocid="A727F4A6-2414535-D5F547C578F591B-86621E-d1096e266" class="topicref" data-id="A727F4A6-2414535-D5F547C578F591B-86621E" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action A727F4A6-2414535-D5F547C578F591B-86621E-d1096e266-link" class="wh-expand-btn"></span><div class="title"><a href="../tas_overview_guide/hpe_tas_typical_usage_scenarios_16_c.html" id="A727F4A6-2414535-D5F547C578F591B-86621E-d1096e266-link">HPE TAS typical usage scenarios</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="A7427F45-A47453D-521F2548145517B-1D9762-d1096e286" class="topicref" data-id="A7427F45-A47453D-521F2548145517B-1D9762" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../tas_overview_guide/call_control_persona_12_c.html" id="A7427F45-A47453D-521F2548145517B-1D9762-d1096e286-link">Call control persona</a></div></div></li><li role="treeitem" class="active"><div data-tocid="A747F45A-62A4715-3D521F2154A7F15-517B12-d1096e306" class="topicref" data-id="A747F45A-62A4715-3D521F2154A7F15-517B12" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../tas_overview_guide/messaging_persona_87_c.html" id="A747F45A-62A4715-3D521F2154A7F15-517B12-d1096e306-link">Messaging persona</a></div></div></li><li role="treeitem"><div data-tocid="A42F562A-7945355-21F2147F165B517-B2B1CA-d1096e326" class="topicref" data-id="A42F562A-7945355-21F2147F165B517-B2B1CA" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../tas_overview_guide/multimedia_control_persona_94_c.html" id="A42F562A-7945355-21F2147F165B517-B2B1CA-d1096e326-link">Multimedia control persona</a></div></div></li></ul></li></ul></div>
+		                        
+                            </div>
+                        </nav>
                     
-                    <div class="col-12" id="wh_topic_body">
-                        
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+                            <span class="close-toc-icon-container">
+                                <span class="close-toc-icon"></span>     
+                            </span>
+                        </button>
                         
                         
                         <div class=" wh_topic_content body "><main role="main"><article class="- topic/topic concept/concept topic concept" role="article" aria-labelledby="ariaid-title1">

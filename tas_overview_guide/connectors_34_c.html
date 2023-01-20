@@ -7,9 +7,9 @@
     <script>
         var oxy_webhelp_navlinks = {};
     </script>
-    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20230113132852"></script>
+    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20230120152645"></script>
     <script src="../oxygen-webhelp/app/localization/strings.js?buildId=2022100714"></script>
-    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20230113132852"></script>
+    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20230120152645"></script>
     <script defer="defer" src="../oxygen-webhelp/app/commons.js?buildId=2022100714"></script>
     <script defer="defer" src="../oxygen-webhelp/app/topic.js?buildId=2022100714"></script>
 <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2022100714"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/notes.css?buildId=2022100714"/><link rel="stylesheet" type="text/css" href="../hpe_webhelp_skin_ihss.css"/></head>
@@ -77,7 +77,9 @@
                         
                         <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
                         
-                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                     </div>
                     
                 </nav>
@@ -89,9 +91,21 @@
             <div class="wh_content_area">
                 <div class="row">
                     
+                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem" aria-expanded="true"><div data-tocid="AB2F45A6-A714535-D5212154A8F1555-53155F-d1096e2011" class="topicref" data-id="AB2F45A6-A714535-D5212154A8F1555-53155F" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action AB2F45A6-A714535-D5212154A8F1555-53155F-d1096e2011-link" class="wh-expand-btn"></span><div class="title"><a href="../tas_overview_guide/hpe_tas_architecture_18_c.html" id="AB2F45A6-A714535-D5212154A8F1555-53155F-d1096e2011-link">HPE TAS architecture</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="A7274524-1455D5F-154A71545555722-E723CC-d1096e2031" class="topicref" data-id="A7274524-1455D5F-154A71545555722-E723CC" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../tas_overview_guide/overview_111_c.html" id="A7274524-1455D5F-154A71545555722-E723CC-d1096e2031-link">Overview</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="A7B275AA-47143D5-D51F21487F1B411-5E7A48-d1096e2051" class="topicref" data-id="A7B275AA-47143D5-D51F21487F1B411-5E7A48" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action A7B275AA-47143D5-D51F21487F1B411-5E7A48-d1096e2051-link" class="wh-expand-btn"></span><div class="title"><a href="../tas_overview_guide/hpe_tas_components_66_c.html" id="A7B275AA-47143D5-D51F21487F1B411-5E7A48-d1096e2051-link">HPE TAS components</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="false"><div data-tocid="A7B2F62A-479D5D5-2114A7F15A5315C-8B3A2E-d1096e2071" class="topicref" data-id="A7B2F62A-479D5D5-2114A7F15A5315C-8B3A2E" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action A7B2F62A-479D5D5-2114A7F15A5315C-8B3A2E-d1096e2071-link" class="wh-expand-btn"></span><div class="title"><a href="../tas_overview_guide/service_execution_environment_(see)_139_c.html" id="A7B2F62A-479D5D5-2114A7F15A5315C-8B3A2E-d1096e2071-link">Service Execution Environment (SEE)</a></div></div></li><li role="treeitem"><div data-tocid="A7B2F4A6-A419435-D12154A7153556E-80D9EB-d1096e2113" class="topicref" data-id="A7B2F4A6-A419435-D12154A7153556E-80D9EB" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../tas_overview_guide/web_application_server_on_see_166_c.html" id="A7B2F4A6-A419435-D12154A7153556E-80D9EB-d1096e2113-link">Web application server on SEE</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="A7B7A624-71453D1-F215A87F6525374-115564-d1096e2133" class="topicref" data-id="A7B7A624-71453D1-F215A87F6525374-115564" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action A7B7A624-71453D1-F215A87F6525374-115564-d1096e2133-link" class="wh-expand-btn"></span><div class="title"><a href="../tas_overview_guide/front_end_and_load_balancers_53_c.html" id="A7B7A624-71453D1-F215A87F6525374-115564-d1096e2133-link">Front-end and load balancers</a></div></div></li><li role="treeitem"><div data-tocid="A7B2F5A6-445D521-F24A8F165554115-55721A-d1096e2233" class="topicref" data-id="A7B2F5A6-445D521-F24A8F165554115-55721A" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../tas_overview_guide/network_(abstraction)_layer_97_c.html" id="A7B2F5A6-445D521-F24A8F165554115-55721A-d1096e2233-link">Network (abstraction) Layer</a></div></div></li><li role="treeitem" class="active"><div data-tocid="AF45A6A1-935D522-154A87F16547115-AFBA6B-d1096e2253" class="topicref" data-id="AF45A6A1-935D522-154A87F16547115-AFBA6B" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../tas_overview_guide/connectors_34_c.html" id="AF45A6A1-935D522-154A87F16547115-AFBA6B-d1096e2253-link">Connectors</a></div></div></li><li role="treeitem"><div data-tocid="A2F45619-5D5D52F-2148F65E9A557B2-FD37E0-d1096e2273" class="topicref" data-id="A2F45619-5D5D52F-2148F65E9A557B2-FD37E0" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../tas_overview_guide/scxml_orchestration_engine_132_c.html" id="A2F45619-5D5D52F-2148F65E9A557B2-FD37E0-d1096e2273-link">SCXML Orchestration Engine</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="AF5A2419-115765A-571556D458F3605-695763-d1096e2293" class="topicref" data-id="AF5A2419-115765A-571556D458F3605-695763" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action AF5A2419-115765A-571556D458F3605-695763-d1096e2293-link" class="wh-expand-btn"></span><div class="title"><a href="../tas_overview_guide/supporting_components_156_c.html" id="AF5A2419-115765A-571556D458F3605-695763-d1096e2293-link">Supporting components</a></div></div></li></ul></li></ul></li></ul></div>
+		                        
+                            </div>
+                        </nav>
                     
-                    <div class="col-12" id="wh_topic_body">
-                        
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+                            <span class="close-toc-icon-container">
+                                <span class="close-toc-icon"></span>     
+                            </span>
+                        </button>
                         
                         
                         <div class=" wh_topic_content body "><main role="main"><article class="- topic/topic concept/concept topic concept" role="article" aria-labelledby="ariaid-title1">

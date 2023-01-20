@@ -18,7 +18,7 @@ var properties =
     "webhelp.show.full.size.image" : "true",
     "webhelp.show.main.page.tiles" : "no",
     "webhelp.show.main.page.toc" : "yes",
-    "webhelp.show.publication.toc" : "no",
+    "webhelp.show.publication.toc" : "yes",
     "webhelp.show.top.menu" : "no",
     "webhelp.top.menu.depth" : "3",
     "webhelp.topic.collapsible.elements.initial.state" : "expanded" };

@@ -7,9 +7,9 @@
     <script>
         var oxy_webhelp_navlinks = {};
     </script>
-    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20230113132852"></script>
+    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20230120152645"></script>
     <script src="../oxygen-webhelp/app/localization/strings.js?buildId=2022100714"></script>
-    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20230113132852"></script>
+    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20230120152645"></script>
     <script defer="defer" src="../oxygen-webhelp/app/commons.js?buildId=2022100714"></script>
     <script defer="defer" src="../oxygen-webhelp/app/topic.js?buildId=2022100714"></script>
 <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2022100714"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/notes.css?buildId=2022100714"/><link rel="stylesheet" type="text/css" href="../hpe_webhelp_skin_ihss.css"/></head>
@@ -77,7 +77,9 @@
                         
                         <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
                         
-                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                     </div>
                     
                 </nav>
@@ -89,9 +91,21 @@
             <div class="wh_content_area">
                 <div class="row">
                     
+                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem" aria-expanded="true"><div data-tocid="A727F5A2-A795D1F-254A8C95E787BA1-5144FE-d1096e64" class="topicref" data-id="A727F5A2-A795D1F-254A8C95E787BA1-5144FE" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action A727F5A2-A795D1F-254A8C95E787BA1-5144FE-d1096e64-link" class="wh-expand-btn"></span><div class="title"><a href="../tas_overview_guide/preface_118_c.html" id="A727F5A2-A795D1F-254A8C95E787BA1-5144FE-d1096e64-link">Preface</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="concept_w5z_zyr_bgb-d1096e84" class="topicref" data-id="concept_w5z_zyr_bgb" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../tas_overview_guide/about_this_guide_c.html" id="concept_w5z_zyr_bgb-d1096e84-link">About this guide</a></div></div></li><li role="treeitem"><div data-tocid="concept_isy_whz_4r-d1096e104" class="topicref" data-id="concept_isy_whz_4r" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../_reuse/document_history_c.html" id="concept_isy_whz_4r-d1096e104-link">Document history</a></div></div></li><li role="treeitem" class="active"><div data-tocid="concept_fnt_c1s_bgb-d1096e124" class="topicref" data-id="concept_fnt_c1s_bgb" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../_reuse/conventions_c.html" id="concept_fnt_c1s_bgb-d1096e124-link">Conventions</a></div></div></li><li role="treeitem"><div data-tocid="A4524390-48F4536-451F21A8B155051-7C1C60-d1096e144" class="topicref" data-id="A4524390-48F4536-451F21A8B155051-7C1C60" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../_reuse/where_to_get_more_information_c.html" id="A4524390-48F4536-451F21A8B155051-7C1C60-d1096e144-link">Where to get more information</a></div></div></li><li role="treeitem"><div data-tocid="concept_isy_whz_4r-d1096e164" class="topicref" data-id="concept_isy_whz_4r" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../_reuse/acronyms_c.html" id="concept_isy_whz_4r-d1096e164-link">Acronyms</a></div></div></li></ul></li></ul></div>
+		                        
+                            </div>
+                        </nav>
                     
-                    <div class="col-12" id="wh_topic_body">
-                        
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+                            <span class="close-toc-icon-container">
+                                <span class="close-toc-icon"></span>     
+                            </span>
+                        </button>
                         
                         
                         <div class=" wh_topic_content body "><main role="main"><article class="- topic/topic concept/concept topic concept" role="article" aria-labelledby="ariaid-title1">

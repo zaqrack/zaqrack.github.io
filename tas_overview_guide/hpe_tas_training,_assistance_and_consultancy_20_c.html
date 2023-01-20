@@ -7,9 +7,9 @@
     <script>
         var oxy_webhelp_navlinks = {};
     </script>
-    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20230113132852"></script>
+    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20230120152645"></script>
     <script src="../oxygen-webhelp/app/localization/strings.js?buildId=2022100714"></script>
-    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20230113132852"></script>
+    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20230120152645"></script>
     <script defer="defer" src="../oxygen-webhelp/app/commons.js?buildId=2022100714"></script>
     <script defer="defer" src="../oxygen-webhelp/app/topic.js?buildId=2022100714"></script>
 <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2022100714"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/notes.css?buildId=2022100714"/><link rel="stylesheet" type="text/css" href="../hpe_webhelp_skin_ihss.css"/></head>
@@ -77,7 +77,9 @@
                         
                         <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
                         
-                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                     </div>
                     
                 </nav>
@@ -89,9 +91,21 @@
             <div class="wh_content_area">
                 <div class="row">
                     
+                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem" aria-expanded="true" class="active"><div data-tocid="A77F4279-53DD5F2-5A7F165374A64BF-22DA26-d1096e2715" class="topicref" data-id="A77F4279-53DD5F2-5A7F165374A64BF-22DA26" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action A77F4279-53DD5F2-5A7F165374A64BF-22DA26-d1096e2715-link" class="wh-expand-btn"></span><div class="title"><a href="../tas_overview_guide/hpe_tas_training,_assistance_and_consultancy_20_c.html" id="A77F4279-53DD5F2-5A7F165374A64BF-22DA26-d1096e2715-link">HPE TAS training, assistance and consultancy</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="A745A621-9453D55-21F2AF1155415DD-71D69F-d1096e2735" class="topicref" data-id="A745A621-9453D55-21F2AF1155415DD-71D69F" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../tas_overview_guide/operations_and_administration_training_107_c.html" id="A745A621-9453D55-21F2AF1155415DD-71D69F-d1096e2735-link">Operations and administration training</a></div></div></li><li role="treeitem"><div data-tocid="A7B2745A-62A4D5D-51F215487F15374-15869F-d1096e2755" class="topicref" data-id="A7B2745A-62A4D5D-51F215487F15374-15869F" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../tas_overview_guide/developer_training_40_c.html" id="A7B2745A-62A4D5D-51F215487F15374-15869F-d1096e2755-link">Developer training</a></div></div></li><li role="treeitem"><div data-tocid="A746A719-5D52248-1B7411C75379A43-6487D4-d1096e2775" class="topicref" data-id="A746A719-5D52248-1B7411C75379A43-6487D4" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../tas_overview_guide/developer_assistance_38_c.html" id="A746A719-5D52248-1B7411C75379A43-6487D4-d1096e2775-link">Developer assistance</a></div></div></li></ul></li></ul></div>
+		                        
+                            </div>
+                        </nav>
                     
-                    <div class="col-12" id="wh_topic_body">
-                        
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+                            <span class="close-toc-icon-container">
+                                <span class="close-toc-icon"></span>     
+                            </span>
+                        </button>
                         
                         
                         <div class=" wh_topic_content body "><main role="main"><article class="- topic/topic concept/concept topic concept" role="article" aria-labelledby="ariaid-title1">
